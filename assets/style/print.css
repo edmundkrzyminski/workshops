@@ -20,7 +20,7 @@ code {
 }
 
 @media print {
-  body > div > h1:nth-child(1) {
+  body > div > h1:nth-child(1), div.footer {
     display: none;
   }
 }
