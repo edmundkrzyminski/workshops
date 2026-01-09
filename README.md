@@ -12,11 +12,11 @@ A series of five 2-hour technology workshops for students ages **12–14** with 
 
 ## Workshops
 
-1. Tech Fundamentals – 1/15/2026  
-2. JavaScript Basics – 1/22/2026  
-3. Interactive HTML + JavaScript – 2/5/2026  
-4. Python Coding Introduction – 2/19/2026  
-5. Advanced Python Coding – 4/2/2026  
+1. [Tech Fundamentals](./tech-fundamentals/) – 1/15/2026
+2. JavaScript Basics – 1/22/2026
+3. Interactive HTML + JavaScript – 2/5/2026
+4. Python Coding Introduction – 2/19/2026
+5. Advanced Python Coding – 4/2/2026
 
 ---
 

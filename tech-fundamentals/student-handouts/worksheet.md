@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/style/print.css">
+<link rel="stylesheet" href="../../assets/style/print.css">
 
 # Tech Fundamentals Mission Worksheet
 

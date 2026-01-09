@@ -3,6 +3,17 @@
 **Audience:** Beginners with little to no programming experience
 **Theme:** _"How computers actually work, and how you control them"_
 
+* [Slides](./slides.html)
+* Resources:
+  * [Glossary](./resources/glossary.html)
+  * [Next Steps After Tech Fundamentals](./resources/next-steps.html)
+* Student Handouts:
+  * [Vocabulary Handout](./student-handouts/vocabulary.html)
+  * [Worksheet Handout](./student-handouts/worksheet.html)
+* Instructor Notes:
+  * [Common Questions](./instructor-notes/common-questions.html)
+  * [Timing Guide](./instructor-notes/timing-guide.html)
+
 ## 1. Workshop Goals
 
 By the end of this workshop, every student should be able to:
