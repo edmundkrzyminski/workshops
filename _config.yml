@@ -23,6 +23,8 @@ relative_links:
 navigation:
   - title: Home
     url: /
+  - title: Setup Guide
+    url: /SETUP
   - title: Tech Fundamentals
     url: /tech-fundamentals/
     subnav:
@@ -46,6 +48,29 @@ navigation:
             url: /tech-fundamentals/instructor-notes/common-questions
           - title: Timing Guide
             url: /tech-fundamentals/instructor-notes/timing-guide
+  - title: JavaScript Basics
+    url: /javascript-basics/
+    subnav:
+      - title: Slides
+        url: /javascript-basics/slides.html
+      - title: Resources
+        items:
+          - title: Glossary
+            url: /javascript-basics/resources/glossary
+          - title: Next Steps
+            url: /javascript-basics/resources/next-steps
+      - title: Student Handouts
+        items:
+          - title: Vocabulary
+            url: /javascript-basics/student-handouts/vocabulary
+          - title: Worksheet
+            url: /javascript-basics/student-handouts/worksheet
+      - title: Instructor Notes
+        items:
+          - title: Common Questions
+            url: /javascript-basics/instructor-notes/common-questions
+          - title: Timing Guide
+            url: /javascript-basics/instructor-notes/timing-guide
 
 # Defaults for all pages
 defaults:

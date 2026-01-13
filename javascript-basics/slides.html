@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>JavaScript Basics</title>
+
+	<link rel="stylesheet" href="../assets/revealjs/reset.css">
+	<link rel="stylesheet" href="../assets/revealjs/reveal.css">
+	<link rel="stylesheet" href="../assets/revealjs/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="../assets/revealjs/plugin/highlight/monokai.css">
+	<style>
+		.outlined {
+			text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black !important;
+		}
+
+		div.slide-background-content {
+			background-size: 900px 900px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			opacity: 0.05;
+			background-image: url("../assets/images/logo-transparent.png");
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="../assets/images/logo-transparent.png" data-background-size="900px 900px"
+				data-background-opacity="0.7" data-background-repeat="no-repeat"
+				data-background-position="center center">
+				<h2 class="outlined">JavaScript Basics</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p class="outlined">by Brendon Thiede</p>
+			</section>
+
+			<section>
+				<h2>Student Goals</h2>
+				<ul>
+					<li>Understand what JavaScript is and where it runs</li>
+					<li>Create variables to store information</li>
+					<li>Use console.log to display output</li>
+					<li>Build your first dynamic story</li>
+				</ul>
+			</section>
+
+			<!-- 0:00-0:10 Welcome & Icebreaker -->
+			<section>
+				<h2>Icebreaker</h2>
+				<p>If you could program a robot to do one task for you, what would it be?</p>
+				<p><em>Everyone is learning - mistakes are how we learn coding!</em></p>
+			</section>
+
+			<!-- 0:10-0:25 Setup & Fork/Clone -->
+			<section>
+				<section>
+					<h2>Let's Get Set Up</h2>
+					<p>Time to get our starter code!</p>
+				</section>
+				<section>
+					<h3>Step 1: Fork the Repository</h3>
+					<ol>
+						<li>Go to the workshop repository on GitHub</li>
+						<li>Click the "Fork" button (top right)</li>
+						<li>This creates your own copy!</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Step 2: Clone to Your Computer</h3>
+					<pre><code data-trim>
+git clone https://github.com/YOUR-USERNAME/workshops.git
+cd workshops/javascript-basics/starter-code
+					</code></pre>
+				</section>
+				<section>
+					<h3>Step 3: Open in VS Code</h3>
+					<pre><code data-trim>
+code .
+					</code></pre>
+					<p>This opens VS Code in the current folder</p>
+				</section>
+				<section>
+					<h3>Step 4: Verify Node.js</h3>
+					<p>Open the integrated terminal (View → Terminal)</p>
+					<pre><code data-trim>
+node --version
+					</code></pre>
+					<p>You should see v18 or higher!</p>
+				</section>
+				<section>
+					<h3>Step 5: Run Hello World</h3>
+					<pre><code data-trim>
+node hello.js
+					</code></pre>
+					<p>You should see a welcome message!</p>
+					<p><em>If it works, you're ready to code!</em></p>
+				</section>
+			</section>
+
+			<!-- 0:25-0:45 What is JavaScript & Variables -->
+			<section>
+				<section>
+					<h2>What is JavaScript?</h2>
+				</section>
+				<section>
+					<h3>JavaScript Runs Everywhere</h3>
+					<ul>
+						<li>In web browsers (Chrome, Firefox, Safari)</li>
+						<li>On servers (Node.js)</li>
+						<li>In mobile apps</li>
+						<li>Even in robots!</li>
+					</ul>
+					<p><em>It's one of the most popular programming languages</em></p>
+				</section>
+				<section>
+					<h3>What is Node.js?</h3>
+					<p>Node.js lets us run JavaScript <strong>outside</strong> the browser</p>
+					<ul>
+						<li>In the terminal</li>
+						<li>On servers</li>
+						<li>To build tools and programs</li>
+					</ul>
+					<p><em>Today we're using Node.js to keep things simple</em></p>
+				</section>
+				<section>
+					<h2>Variables</h2>
+					<p>Labeled boxes for storing information</p>
+				</section>
+				<section>
+					<h3>Why Do We Need Variables?</h3>
+					<p>To remember information and use it later!</p>
+					<ul>
+						<li>A player's name</li>
+						<li>A score that changes</li>
+						<li>User settings</li>
+						<li>Story elements</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Creating Variables</h3>
+					<p>Two keywords: <code>let</code> and <code>const</code></p>
+					<pre><code data-trim class="language-javascript">
+const studentName = "Scooby";
+let snacks = 7;
+					</code></pre>
+					<ul>
+						<li><code>const</code> - stays the same (constant)</li>
+						<li><code>let</code> - can change later</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Naming Rules</h3>
+					<ul>
+						<li>Start with a letter</li>
+						<li>No spaces (use camelCase instead)</li>
+						<li>Can't use special keywords (like <code>let</code>, <code>const</code>)</li>
+						<li>Be descriptive!</li>
+					</ul>
+					<pre><code data-trim class="language-javascript">
+// Good names
+let playerName = "Sam";
+let currentScore = 100;
+
+// Bad names
+let x = "Sam";  // What is x?
+let name = "Sam";  // Which name?
+let my name = "Sam";  // Has a space!
+					</code></pre>
+				</section>
+				<section>
+					<h3>Data Types</h3>
+					<p>Different kinds of information</p>
+				</section>
+				<section>
+					<h3>Strings</h3>
+					<p>Text wrapped in quotes</p>
+					<pre><code data-trim class="language-javascript">
+let greeting = "Hello, world!";
+let name = "Scooby";
+let story = 'Once upon a time...';
+					</code></pre>
+					<p><em>Use double quotes " " or single quotes ' '</em></p>
+				</section>
+				<section>
+					<h3>Numbers</h3>
+					<p>No quotes needed!</p>
+					<pre><code data-trim class="language-javascript">
+let age = 13;
+let score = 100;
+let pi = 3.14;
+					</code></pre>
+					<p><em>Can do math with numbers!</em></p>
+				</section>
+				<section>
+					<h3>Booleans</h3>
+					<p>True or false values</p>
+					<pre><code data-trim class="language-javascript">
+const isLearning = true;
+const hasFinished = false;
+const lovesJavaScript = true;
+					</code></pre>
+					<p><em>Great for yes/no questions!</em></p>
+				</section>
+				<section>
+					<h3>Activity: Your First Variables</h3>
+					<p>Open <code>story.js</code> and create variables about yourself:</p>
+					<pre><code data-trim class="language-javascript">
+let myName = "put your name here";
+let myAge = 0;  // put your age
+const isLearningJS = true;
+					</code></pre>
+					<p>Run it: <code>node story.js</code></p>
+				</section>
+			</section>
+
+			<!-- 0:45-1:05 Console.log & Concatenation -->
+			<section>
+				<section>
+					<h2>Console.log</h2>
+					<p>Seeing what your program is doing</p>
+				</section>
+				<section>
+					<h3>Why console.log?</h3>
+					<ul>
+						<li>Displays information in the terminal</li>
+						<li>Shows you what variables contain</li>
+						<li>Helps you debug (find mistakes)</li>
+						<li>Your programming superpower!</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Using console.log</h3>
+					<pre><code data-trim class="language-javascript">
+let name = "Alex";
+console.log(name);
+					</code></pre>
+					<p>Output:</p>
+					<pre><code data-trim>
+Alex
+					</code></pre>
+				</section>
+				<section>
+					<h3>Logging Different Things</h3>
+					<pre><code data-trim class="language-javascript">
+console.log("Hello!");
+console.log(42);
+console.log(true);
+					</code></pre>
+					<p>Output:</p>
+					<pre><code data-trim>
+Hello!
+42
+true
+					</code></pre>
+				</section>
+				<section>
+					<h2>String Concatenation</h2>
+					<p>Joining strings together</p>
+				</section>
+				<section>
+					<h3>The + Operator</h3>
+					<p>Combines strings (and numbers)</p>
+					<pre><code data-trim class="language-javascript">
+let firstName = "Alex";
+let lastName = "Smith";
+console.log(firstName + " " + lastName);
+					</code></pre>
+					<p>Output:</p>
+					<pre><code data-trim>
+Alex Smith
+					</code></pre>
+					<p><em>Don't forget the space!</em></p>
+				</section>
+				<section>
+					<h3>Mixing Variables and Text</h3>
+					<pre><code data-trim class="language-javascript">
+let name = "Alex";
+let age = 13;
+console.log("My name is " + name);
+console.log("I am " + age + " years old");
+					</code></pre>
+					<p>Output:</p>
+					<pre><code data-trim>
+My name is Alex
+I am 13 years old
+					</code></pre>
+				</section>
+				<section>
+					<h3>Common Mistake: Missing Spaces</h3>
+					<pre><code data-trim class="language-javascript">
+// Without space
+console.log("Hello" + name + "!");
+
+// With space
+console.log("Hello " + name + "!");
+					</code></pre>
+					<p><em>Always check your spacing!</em></p>
+				</section>
+				<section>
+					<h3>Activity: Build Messages</h3>
+					<p>Add to your <code>story.js</code>:</p>
+					<pre><code data-trim class="language-javascript">
+console.log("Hello, my name is " + myName);
+console.log("I am " + myAge + " years old");
+console.log("Am I learning JavaScript? " + isLearningJS);
+					</code></pre>
+					<p>Run it: <code>node story.js</code></p>
+				</section>
+			</section>
+
+			<!-- 1:05-1:15 Break -->
+			<section>
+				<h2>Break Time!</h2>
+				<p>Stretch, move around, grab some water</p>
+				<p>Back in 10 minutes!</p>
+			</section>
+
+			<!-- 1:15-1:25 Project Introduction -->
+			<section>
+				<section>
+					<h2>Your Mission</h2>
+					<p>Create a dynamic story using variables!</p>
+				</section>
+				<section>
+					<h3>The Goal</h3>
+					<ul>
+						<li>Create story variables (characters, places, objects)</li>
+						<li>Use console.log to tell your story</li>
+						<li>Combine variables with text</li>
+						<li>Make it creative and personal!</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Example Story</h3>
+					<pre><code data-trim class="language-javascript">
+const hero = "Captain Code";
+let location = "Digital Forest";
+let treasure = 0;
+
+console.log(hero + " entered the " + location);
+treasure = treasure + 5;
+console.log("Found " + treasure + " gems!");
+					</code></pre>
+				</section>
+				<section>
+					<h3>Your Template</h3>
+					<p>Open <code>story.js</code> - it has TODO comments to guide you!</p>
+					<p>Build your story step by step:</p>
+					<ol>
+						<li>Add variables</li>
+						<li>Create opening</li>
+						<li>Develop the story</li>
+						<li>Build the climax</li>
+						<li>Write the ending</li>
+					</ol>
+				</section>
+			</section>
+
+			<!-- 1:25-1:45 Hands-On Time -->
+			<section>
+				<section>
+					<h2>Hands-On: Build Your Story!</h2>
+				</section>
+				<section>
+					<h3>Getting Help</h3>
+					<ul>
+						<li>Run it frequently with small changes: <code>node story.js</code></li>
+						<li>Read the error messages - they're helpful!</li>
+						<li>Check for missing quotes</li>
+						<li>Check for missing + signs</li>
+						<li>Ask an instructor</li>
+						<li>Help your neighbor</li>
+					</ul>
+					<p><em>Everyone makes mistakes - that's how we learn!</em></p>
+				</section>
+				<section>
+					<h3>If you are finished early</h3>
+					<ul>
+						<li>See if you can help a neighbor</li>
+						<li>Add math to track scores</li>
+						<li>Create multiple chapters</li>
+						<li>Use <code>let</code> to change values</li>
+						<li>Add more variables</li>
+						<li>Make your story longer!</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Remember</h3>
+					<p><strong>Your story is unique!</strong></p>
+					<p>There's no "right" story - be creative!</p>
+					<p>The goal is to practice variables and console.log</p>
+				</section>
+			</section>
+
+			<!-- 1:45-1:55 Git & Show-and-Tell -->
+			<section>
+				<section>
+					<h2>Save Your Work</h2>
+					<p>Let's commit to Git!</p>
+				</section>
+				<section>
+					<h3>Git Commands</h3>
+					<pre><code data-trim>
+git add .
+git commit -m "Complete dynamic story"
+git push
+					</code></pre>
+					<p>Now your work is saved on GitHub!</p>
+				</section>
+				<section>
+					<h2>Show & Tell</h2>
+					<p>Who wants to share their story?</p>
+				</section>
+			</section>
+
+			<!-- 1:55-2:00 Wrap-Up -->
+			<section>
+				<section>
+					<h2>Wrap-Up</h2>
+				</section>
+				<section>
+					<h3>What We Learned</h3>
+					<ul>
+						<li>JavaScript runs everywhere</li>
+						<li>Variables store information</li>
+						<li>let vs const</li>
+						<li>Data types: strings, numbers, booleans</li>
+						<li>console.log displays output</li>
+						<li>String concatenation with +</li>
+						<li>Running code with Node.js</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Reflection</h3>
+					<p>What surprised you about JavaScript?</p>
+					<p>What would you add to your story with more time?</p>
+				</section>
+				<section>
+					<h3>Coming Up Next</h3>
+					<p>Interactive HTML + JavaScript</p>
+					<p>Your code will respond to <strong>real button clicks!</strong></p>
+					<p>Variables will store <strong>user input!</strong></p>
+				</section>
+				<section>
+					<h3>Keep Practicing</h3>
+					<ul>
+						<li>Create more stories</li>
+						<li>Experiment with variables</li>
+						<li>Try the Node REPL: type <code>node</code></li>
+						<li>Check out the Next Steps guide</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>Questions?</section>
+			<section data-background-image="../assets/images/logo-transparent.png" data-background-size="900px 900px"
+				data-background-opacity="1" data-background-repeat="no-repeat" data-background-position="center center">
+				<h2 class="outlined"><em>Thank you!</em></h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="../assets/revealjs/reveal.js"></script>
+	<script src="../assets/revealjs/plugin/notes/notes.js"></script>
+	<script src="../assets/revealjs/plugin/markdown/markdown.js"></script>
+	<script src="../assets/revealjs/plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
