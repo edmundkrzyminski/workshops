@@ -280,6 +280,10 @@ git config --list
 
 **What is GitHub?** A website for hosting and sharing code using Git.
 
+### Quick note on password management
+
+Using a password manager is highly recommended to securely store your passwords and SSH keys. Some popular options include Bitwarden and 1Password. Bitwarden offers a free tier that is quite robust and can be accessed across multiple devices. Teaching youth to use a password manager and avoiding password reuse is a valuable skill for maintaining good security practices. Students will need to have access to their GitHub account during the workshop, so ensuring they can log in easily is important.
+
 ### Creating an Account
 
 1. Go to [https://github.com/](https://github.com/)
