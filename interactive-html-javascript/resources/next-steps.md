@@ -22,9 +22,11 @@ section: Resources
 
 ## Explore More (If Curious)
 
+- [MDN HTML Basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content)
 - [MDN HTML Forms](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 - [MDN DOM Basics](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - [JavaScript Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [W3Schools HTML Reference](https://www.w3schools.com/tags/)
 
 ## Keep It Safe and Fun
 
