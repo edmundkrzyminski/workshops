@@ -539,3 +539,35 @@ chmod +x godot
 sudo mv godot /usr/local/bin/
 rm godot.zip
 ```
+
+### Create a Desktop Shortcut (Chromebook Linux or Linux Mint Cinnamon)
+
+After Godot is installed, run:
+
+```bash
+chmod +x scripts/create-godot-shortcut.sh
+./scripts/create-godot-shortcut.sh
+```
+
+Or run it without cloning this repo:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Lansing-Tech-Studio/workshops/main/scripts/create-godot-shortcut.sh)"
+```
+
+Without cloning, if you need to pass a specific Godot executable path:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Lansing-Tech-Studio/workshops/main/scripts/create-godot-shortcut.sh)" -- /path/to/godot
+```
+
+If your executable is not in your `PATH`, pass it directly:
+
+```bash
+./scripts/create-godot-shortcut.sh /path/to/godot
+```
+
+The script downloads the official Godot icon and creates launcher files in:
+
+- `~/.local/share/applications/godot.desktop`
+- `~/Desktop/Godot.desktop` (if your desktop folder exists)
