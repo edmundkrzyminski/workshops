@@ -141,6 +141,11 @@ navigation:
             url: /python-intro/instructor-notes/common-questions
           - title: Timing Guide
             url: /python-intro/instructor-notes/timing-guide
+  - title: Digital Art & Animation
+    url: /character-sprite-animation/
+    subnav:
+      - title: Setup Guide
+        url: /character-sprite-animation/HOW_TO_SETUP
   - title: Learning Checks
     url: /learning-checks
 
@@ -151,6 +156,10 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: "character-sprite-animation"
+    values:
+      workshop: "Digital Art & Animation"
   - scope:
       path: "tech-fundamentals"
     values:

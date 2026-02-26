@@ -58,6 +58,18 @@ Learn Python fundamentals: variables, data types, print(), input(), f-strings, a
 
 ---
 
+### [Digital Art & Animation]({{ site.baseurl }}/character-sprite-animation/)
+
+**Date:** February 26, 2026  
+**Duration:** 2 hours  
+**Theme:** *"Designing your own character sprites and bringing them to life in a game engine"*
+
+Customize character sprite animations using Piskel and import them into a ready-made Godot platformer. Learn about sprite sheets, pixel art, and animation frames.
+
+[View Workshop →]({{ site.baseurl }}/character-sprite-animation/)
+
+---
+
 ### Advanced Python Coding
 
 **Date:** April 2, 2026  
